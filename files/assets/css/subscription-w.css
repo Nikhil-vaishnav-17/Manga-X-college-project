@@ -1,0 +1,129 @@
+/* subscription page CSS */
+
+	.manga-description{
+		margin: 20px;
+		padding: 15px;
+		color: #000;
+		border-radius: 5px;
+	}
+
+	.plans{
+		margin: 20px;
+		padding: 15px;
+		height: 320px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		color: #000;
+		border-radius: 5px;
+	}
+
+	.plan{
+		margin: 10px;
+		border-radius: 15px;
+		background: linear-gradient(to right, #771077, rgb(227, 9, 227), #771077);
+		box-shadow: 0 0 6px black;
+
+
+	}
+
+	.plan:hover{
+		scale: 1.05;
+		transition-duration: 0.3s;
+		box-shadow: 0 0 10px black;
+	}
+
+	.plan:not(:hover){
+		transition: 0.3s;
+	}
+
+	.plan h2{
+		text-align: center;
+		margin: 15px 0px 15px 0px;
+		text-decoration: underline;
+	}
+
+	.specification{
+		margin-top: 15px;
+	}
+
+	.price{
+		margin-top: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.price h3:hover{
+		scale: 1.05;
+		background: linear-gradient(to right, rgb(120, 67, 2), rgb(222, 202, 91), rgb(120, 67, 2));
+		transition-duration: 0.3s;
+		border: 2px solid rgba(208, 143, 2, 0.751);
+	}
+
+	.price h3:not(:hover){
+		transition: 0.3s;
+	}
+
+	.price h3{
+		cursor: pointer;
+		font-style: oblique;
+		font-family: sans-serif;
+		color: rgb(19, 19, 19);
+		border: 2px solid yellow;
+		border-radius: 10px;
+		padding: 5px;
+		background: linear-gradient(to right, rgb(120, 102, 2), rgb(222, 202, 91), rgb(120, 102, 2));
+	}
+
+	.buttons{
+		display: flex;
+		justify-content: center;
+	}
+
+	.premium-button{
+		height: 50px;
+		width: 250px;
+		margin: 40px;
+		border: 2px solid #6c19ba;
+		border-radius: 50px;
+		background-color: #6c19ba;
+		color: white;
+		font-weight: bold;
+    	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+	}
+
+	.premium-button:hover{
+		scale: 1.05;
+		transition-duration: 0.5s;
+		background: #343a40; 
+    	border: 2px solid #343a40; 
+    	color: #f8f9fa; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    	
+	}
+
+	.premium-button:not(:hover){
+		transition: 0.3s;
+	}
+
+	.privacy p{
+		margin-left: 50px;
+		color: #000;
+		font-size: 7px;
+	}
+
+
+	/* media quiries for Subscription page */
+
+	@media (max-width: 768px) {
+		.plans{
+			height: auto;
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.premium-button{
+			margin: 25px;
+		}
+	}

@@ -1,0 +1,90 @@
+	
+	html, body {
+	    overflow: hidden;
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    background: linear-gradient(to bottom, #000000 0%, #3a3a3e 100%);
+	}
+
+	.Image {
+		display: block;
+		max-width: 50%;
+		height: auto;
+		margin: 0 auto; 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+		opacity: 0; 
+		animation: fadeIn 2s ease-in-out forwards; 
+	}
+
+	/* Fade-in animation keyframes */
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+
+	/* Adjustments for different screen sizes */
+	@media (max-width: 1200px) {
+    .Image {
+        width: 70%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .Image {
+        width: 80%; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .Image {
+        width: 90%; /* Adjust width for mobile phones */
+    }
+}
+
+@media (max-width: 320px) {
+    .Image {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+	.btn-explore {
+    color: white;
+    position: absolute;
+    width: 30%; /* Adjust width to be responsive */
+    max-width: 200px; /* Maximum width for larger screens */
+    min-width: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #3b3b3e; 
+    border: 2px solid #ffffff88; 
+    border-radius: 30px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards 1.2s; 
+}
+
+.btn-explore:hover {
+    background-color: #505053; 
+	    transform: scale(1.09) translate(-46%, -46%);
+	    transition: 0.3s;
+	    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	.btn-explore:not(:hover){
+		transition: 0.3s;
+	}
+

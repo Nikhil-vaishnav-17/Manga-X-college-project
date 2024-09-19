@@ -1,0 +1,247 @@
+
+	/* Manga page */
+	.background{
+		height: auto;
+		width: 100%;
+		background-image: url("../images/anime-background.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-color: #000; 
+		background-size: cover;
+	}
+
+	.opacity{
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(to bottom, rgba(20, 1, 32, 0.95), rgba(33, 1, 53, 0.9), rgba(20, 1, 32, 0.95));
+	}
+
+	.content{
+		display: grid;
+		grid-template-columns: 30% 70% ;
+	}
+
+	.photo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.cover-img{
+		width: 280px;
+		height: auto;
+	}
+	.description{
+		background-color: #1e1e1e;
+		margin-top: 50px;
+		margin-bottom: 30px; 
+		color: #e6e6e6;
+		margin-right: 130px;
+
+	}
+
+	.opacity2{
+		height: 100%;
+		width: 100%;
+		background: rgba(28, 28, 28, 0.85);
+		border: 2px solid #6c19ba; 
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	.description h3{
+		padding: 15px;
+		margin-left: 10px;
+
+		text-decoration: underline;
+	}
+
+	.rating-view{
+
+		color: grey;
+		padding: 8px;
+		width: 220px;
+		margin-left: 15px;
+		border: 1.5px solid #6c19ba; 
+	}
+
+	.rating{
+		margin: 10px;
+	}
+	.view{
+		margin: 10px;
+	}
+
+	.detail table{
+		width: 60%;
+		margin-top: 20px;
+		margin-left: 20px;
+
+	}
+
+	td{
+		text-align: left;
+		padding: 8px;
+		font-weight: 500;
+	}
+
+	.rate-bookmark{
+		width: 100%;
+		height: 50px;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.rate{
+		width: 50%;
+		border-right: 2px solid white ;
+
+	}
+	.bookmark{
+		width: 50%;
+	}
+	.rate span{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bookmark span{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.rate span i{
+		font-size: 45px;
+		cursor: pointer;
+	}
+	.bookmark span i{
+		font-size: 45px;
+		cursor: pointer;
+	}
+
+	.first-last{
+		margin-top: 30px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.first{
+		background-color: #6c19ba; 
+		border-radius: 20px;
+		color: white;
+		height: 45px;
+		width: 130px;
+		margin: 20px;
+		border:none;
+		font-weight: bold;
+	}
+	.last{
+		background-color: #6c19ba; 
+		border-radius: 20px;
+		color: white;
+		height: 45px;
+		width: 130px;
+		margin: 20px;
+		border:none;
+		color: white;
+		font-weight: bold;
+	}
+
+	.first:hover, .last:hover {
+		background-color: #ffffff;
+		color: #6c19ba;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+	.first:not(:hover), .last:not(:hover){
+		transition: 0.2s;
+	}
+	.first:active, .last:active {
+		background-color: #e0e0e0;
+		color: #6c19ba;
+		box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	.about{
+		padding: 20px;
+		color: #d1d1d1; 
+		margin: 30px auto;
+		height: auto;
+		background-color: #1b1b1b; 
+		border-radius: 10px;
+		border: 2px solid #1b1b1b; 
+		max-width: 90%; 
+	}
+
+	.introduction h2, .tag h2, .chapters h2 {
+		text-decoration: underline;
+		text-decoration-color: #6c19ba;
+	}
+	.introduction p, .tag p{
+		margin-top: 15px;
+		color: #b0b0b0;
+	}
+
+	.chapter-box{
+		margin-top: 20px;
+		padding: 20px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+		background-color: #2c2c2c; 
+		border: 2px solid #6c19ba; 
+		border-radius: 10px;
+		color: white;
+	}
+
+	.chap{
+		font-weight: bold;
+		margin: 10px;
+		padding: 10px;
+		background-color: #4a148c; 
+		color: #ffffff; 
+		text-align: center;
+		border-radius: 4px;
+		transition: background-color 0.3s, color 0.3s;
+	}  
+
+	a:has(> div.chap) {
+		color: #ffffff; 
+		text-decoration: none;
+	}
+	.chap:hover {
+		background-color: #311b92; 
+		color: #ffffff; 
+		text-decoration: underline;
+	}
+
+
+	@media (max-width: 768px) {
+		.content{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.description {
+			width: 85%; 
+			margin: auto;
+		}
+
+		.about {
+			margin: 0 ;
+			max-width: 95%;
+		}
+
+		.bodyb-manga-page-w{
+			padding: 0;
+			margin: ;
+		}
+		
+	}
